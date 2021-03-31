@@ -50,4 +50,4 @@ app.post('/productsByKeys' , (req, res)=>{
 app.get('/',  (req, res) =>{
   res.send('hello world')
 })
-app.listen(port)
+app.listen(process.env.PORT || port)
